@@ -86,7 +86,7 @@ function setActive () {
 function scrollToClick() {
     navigation.addEventListener('click', function (event) {
         const clicked = document.querySelector('#' + event.target.dataset.nav)
-        clicked.scrollIntoView();
+        clicked.scrollIntoView({behavior: "smooth"});
     });
 };
 
